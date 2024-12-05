@@ -6,16 +6,21 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:36:31 by moboulan          #+#    #+#             */
-/*   Updated: 2024/12/04 12:33:19 by moboulan         ###   ########.fr       */
+/*   Updated: 2024/12/05 23:36:02 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <limits.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
+# include <fcntl.h>
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -78,5 +83,7 @@ void				ft_lstclear(t_list **lst, void (*del)(void*));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void(*del) (void *));
+
+char				*get_next_line(int fd);
 
 #endif

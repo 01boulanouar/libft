@@ -18,9 +18,9 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 $(NAME): $(OBJ)
 
-all: $(NAME) libft.h
+all: $(NAME)
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 	$(AR) $(NAME) $@
 

@@ -6,7 +6,7 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:21:29 by moboulan          #+#    #+#             */
-/*   Updated: 2024/10/27 21:55:53 by moboulan         ###   ########.fr       */
+/*   Updated: 2024/12/06 22:33:19 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		*((unsigned char *)s + i) = (unsigned char)c;
+		((unsigned char *)s)[i] = c;
 		i++;
 	}
 	return (s);

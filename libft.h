@@ -6,7 +6,7 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:36:31 by moboulan          #+#    #+#             */
-/*   Updated: 2024/12/05 23:36:02 by moboulan         ###   ########.fr       */
+/*   Updated: 2024/12/07 09:05:37 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
-# include <fcntl.h>
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);

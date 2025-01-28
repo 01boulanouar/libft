@@ -6,7 +6,7 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:36:31 by moboulan          #+#    #+#             */
-/*   Updated: 2024/12/07 09:05:37 by moboulan         ###   ########.fr       */
+/*   Updated: 2025/01/28 23:12:47 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,10 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void(*del) (void *));
 
 char				*get_next_line(int fd);
+
+void				ft_putchar(char c);
+void				ft_putnbr(int n);
+void				ft_putstr(char *s);
+void				ft_swap(int *a, int *b);
 
 #endif

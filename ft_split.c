@@ -6,13 +6,13 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 11:40:11 by moboulan          #+#    #+#             */
-/*   Updated: 2024/10/28 21:20:42 by moboulan         ###   ########.fr       */
+/*   Updated: 2025/01/28 23:25:23 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int static	ft_count_words(const char *s, char c)
+static int	ft_count_words(const char *s, char c)
 {
 	int	i;
 	int	count;

@@ -6,7 +6,7 @@
 /*   By: moboulan <moboulan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:46:58 by moboulan          #+#    #+#             */
-/*   Updated: 2024/10/28 00:21:47 by moboulan         ###   ########.fr       */
+/*   Updated: 2025/03/17 21:26:44 by moboulan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,32 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)num * signe);
 }
+
+// long	ft_atoi(const char *str)
+// {
+// 	long	num;
+// 	int		right_most;
+// 	int		sign;
+
+// 	num = 0;
+// 	sign = 1;
+// 	if (*str == '+')
+// 		str++;
+// 	else if (*str == '-')
+// 	{
+// 		sign = -1;
+// 		str++;
+// 	}
+// 	while (*str >= '0' && *str <= '9')
+// 	{
+// 		right_most = (*str - '0') * sign;
+// 		printf("%ld\n", num);
+// 		if (num > (INT_MAX / 10) || (num == (INT_MAX / 10) && right_most > 7))
+// 			return (2147483648);
+// 		if (num < (INT_MIN / 10) || (num == (INT_MIN / 10) && right_most < -8))
+// 			return (2147483648);
+// 		num = num * 10 + right_most;
+// 		str++;
+// 	}
+// 	return (num);
+// }
